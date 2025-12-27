@@ -87,11 +87,12 @@ http://localhost:8000/docs
 
 #### Эндпоинты:
 
-- POST /items — создать задачу
-- GET /items — получить список задач
-- GET /items/{id} — получить задачу по ID
-- PUT /items/{id} — обновить задачу
-- DELETE /items/{id} — удалить задачу
+- POST /items - создать задачу
+- GET /items - получить список задач
+- GET /items/{id} -— получить задачу по ID
+- PUT /items/{id} - обновить задачу
+- PATCH /items/{id} - частично обновить задачу
+- DELETE /items/{id} - удалить задачу
 
 ---
 
@@ -102,9 +103,9 @@ http://localhost:8001/docs
 
 #### Эндпоинты
 
-- POST /shorten — создать короткую ссылку
-- GET /{short_id} — редирект на полный URL
-- GET /stats/{short_id} — информация о ссылке
+- POST /shorten - создать короткую ссылку
+- GET /{short_id} - редирект на полный URL
+- GET /stats/{short_id} - информация о ссылке
 
 **Проверка редиректа выполняется напрямую через браузер:** http://localhost:8001/{short_id}
 
