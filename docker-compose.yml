@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  todo-service:
+    build: ./todo_app
+    container_name: todo-service
+    ports:
+      - "8000:80"
+    volumes:
+      - todo_data:/app/data
+    restart: unless-stopped
+
+  shorturl-service:
+    build: ./shorturl_app
+    container_name: shorturl-service
+    ports:
+      - "8001:80"
+    volumes:
+      - shorturl_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  todo_data:
+  shorturl_data:
